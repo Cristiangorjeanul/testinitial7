@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 3px;
+  text-align: center;
+  margin-top: 20px;
+  color: yellow;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: yellow;
+  margin: 5px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+  color: yellow;
+  margin: 5px;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+button {
+  color: white;
+  background-color: red;
+  cursor: pointer;
+  width: 280px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 5px auto;
+  border-radius: 7px;
+}
+
+button:active {
+  background-color: green;
+}
+
+button:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  button {
+    width: 430px;
+  }
+}
+
+#questionnaire {
+  background-color: blue;
+  margin: 0 auto;
+  width: 290px;
+  height: 459px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  #questionnaire {
+    width: 750px;
+    height: 460px;
+  }
+}
+
+.bell {
+  display: block;
+  width: 25px;
+  height: 35px;
+  font-size: 50px;
+  padding-top: 1px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+  color: gold;
+  -webkit-animation: ring 7s ease infinite;
+  -webkit-transform-origin: 100% 0;
+  -moz-animation: ring 7s ease infinite;
+  -moz-transform-origin: 100% 0;
+  animation: ring 9s ease infinite;
+  transform-origin: 100% 0;
+}
+
+@media (min-width: 768px) {
+  .bell {
+    width: 45px;
+    height: 75px;
+    font-size: 90px;
+    padding-top: 1px;
+    padding-bottom: 35px;
+  }
+}
+
+@-webkit-keyframes ring {
+  25% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  75% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(-25);
+  }
+}
+
+@-moz-keyframes ring {
+  25% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  75% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(-25);
+  }
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(20deg);
+  }
+  12% {
+    transform: rotate(-15deg);
+  }
+  24% {
+    transform: rotate(10deg);
+  }
+  34% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(25deg);
+  }
+  85% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
